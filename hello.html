@@ -1,10 +1,18 @@
 <style>
+    div.a {
+	text-align: center;
+}
 h1{
     color:blue;
     curscr:pointer;
     transition: 0.2s;
 
 }
+ h3{
+      background-image: linear-gradient(to right,#5C258D,green  ) ;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
 h1:hover{
     color: red;
@@ -28,9 +36,19 @@ img:hover{
     box-shadow: 1px 1px 6px red;
 }
 </style>
-
-<h1>HELLO WORLD HTML</h1>
-<p>Saya Nurholis,NIM:41215537</p>
+<center>
+<h1>OLIS DRAGNEEL</h1>
+<h3 style="font-family: cursive;">Nurholis-41215537</h3>
 
 <img src="olis.jpg">
-<button onclick="alert('Hello World JavaScript')">Hello JavaScript</button>
+<button onclick="alert('Hello World JavaScript')">Show Table</button
+</center>
+<script>
+    function PindahKeunKaHalamanTable() {
+      const yakinNih = confirm("Apakah anda yakin ingin pindah ke halaman table?")
+      if (yakinNih) {
+        return document.location.href = "./P03/P03_table.html"
+      }
+      alert("Batal berpindah halaman, terimakasih sudah memberikan response")
+    }
+  </script>
