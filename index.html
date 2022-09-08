@@ -112,7 +112,7 @@ img:hover{
 
 <img src="olis.jpg">
 <button onclick="Pindah()" class="btn third">Show Table</button>
-<button onclick="Pindah()" class="btn third">Show Table</button>
+<button onclick="Pin()" class="btn third">Show Table2</button>
 		 
 		</div>
 	
@@ -120,6 +120,13 @@ img:hover{
 
 <script>
     function Pindah() {
+      const yakinNih = confirm("Want to switch pages?")
+      if (yakinNih) {
+        return document.location.href = "./P03/P03_table.html"
+      }
+      alert("Batal berpindah halaman, terimakasih sudah memberikan response")
+    }
+function Pin() {
       const yakinNih = confirm("Want to switch pages?")
       if (yakinNih) {
         return document.location.href = "./P03/P03_table.html"
