@@ -112,7 +112,8 @@ img:hover{
 
 <img src="xx.jpeg">
 <button onclick="Pindah()" class="btn third">Show Table</button>
-<button onclick="Pin()" class="btn third">Show Table2</button>
+<button onclick="Pin()" class="btn third">Show Table2</button>  
+<button onclick="Pin2()" class="btn third">Show Table3</button>
 		 
 		</div>
 	
@@ -130,6 +131,13 @@ function Pin() {
       const yakinNih = confirm("Want to switch pages?")
       if (yakinNih) {
         return document.location.href = "./P03css/zx.html"
+      }
+      alert("Batal berpindah halaman, terimakasih sudah memberikan response")
+    }
+function Pin2() {
+      const yakinNih = confirm("Want to switch pages?")
+      if (yakinNih) {
+        return document.location.href = "./P03jquery/re.html"
       }
       alert("Batal berpindah halaman, terimakasih sudah memberikan response")
     }
