@@ -119,6 +119,7 @@ img:hover{
 <button onclick="Pindah()" class="btn third">Show Table</button>
 <button onclick="Pin()" class="btn third">Show Table2</button>  
 <button onclick="Pin2()" class="btn third">Show Table3</button>
+<button onclick="f1()" class="btn third">Show Form1</button>
 		 
 		</div>
 	
@@ -144,6 +145,13 @@ function Pin2() {
       const yakinNih = confirm("Want to switch pages?")
       if (yakinNih) {
         return document.location.href = "./p03jquery/re.html"
+      }
+      alert("Batal berpindah halaman, terimakasih sudah memberikan response")
+    }
+	function f1() {
+      const yakinNih = confirm("Want to switch pages?")
+      if (yakinNih) {
+        return document.location.href = "./p03form-lv1/b1.html"
       }
       alert("Batal berpindah halaman, terimakasih sudah memberikan response")
     }
