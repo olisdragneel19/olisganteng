@@ -222,13 +222,11 @@
 					<th align="left" valign="top">Pekerjaan</th>
 					<td valign="top">:</td>
 					<td>
-						<select name="pekerjaanOrtuWali">
-							<option value=""></option>
-							<option value="PNS/TNI/POLRI">PNS/TNI/POLRI</option>
-							<option value="Swasta">Swasta</option>
-							<option value="Wiraswasta">Wiraswasta</option>
-							<option value="Lain-lain">Lain-lain</option>
-						</select>
+                        <input type='checkbox' name='pns' value='pns'>PNS/TNI/POLRI
+                        <input type='checkbox' name='swal' value='swal'>Swasta
+                        <input type='checkbox' name='wir' value='wir'>Wiraswasta
+                        <input type='checkbox' name='lain' value='lain'>Lainnya
+							
 					</td>
 				</tr>
 			</table>
@@ -248,12 +246,9 @@
 					<th align="left">Status Sekolah/Perguruan Tinggi</th>
 					<td valign="top">:</td>
 					<td valign="top">
-						<select name="status_sekolah">
-							<option value=""></option>
-							<option value="Negeri">Negeri</option>
-							<option value="Swasta">Swasta</option>
-							<option value="Luar Negeri">Luar Negeri</option>
-						</select>
+						<input type='checkbox' name='ne' value='ne'>Negeri
+                        <input type='checkbox' name='swa' value='swa'>Swasta
+                        <input type='checkbox' name='lur' value='lur'>Luar Negeri
 					</td>
 				</tr>
 				<tr>
@@ -274,6 +269,13 @@
 					<td>:</td>
 					<td><input type="date" name="tgl_lulus"></td>
 				</tr>
+                <tr>
+                    <th></th>
+					<th align="left">Nilai kumulatif</th>
+					<td>:</td>
+					<td><input type="text" name="nilai"></td>
+				</tr>
+                </tr>
 			</table>
 		</fieldset>
 		<br>
