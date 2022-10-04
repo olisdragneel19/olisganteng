@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $(".tombol").click(function(){
+        $(".isi").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $(".tombol2").click(function(){
+        $(".isi2").slideToggle("slow");
+    });
+});
